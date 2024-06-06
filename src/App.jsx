@@ -1,9 +1,16 @@
 import './App.css'
+import About from './components/About';
+import Carousel from './components/Carousel';
+import Logo from './components/Logo';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <main>
-      <h1 className=''>Hello World</h1>
+      <Logo />
+      <Navbar />
+      <Carousel />
+      <About />
     </main>
   )
 }
