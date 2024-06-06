@@ -1,0 +1,25 @@
+.triangulo {
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+}
+
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  transition-property: justify-content;
+  transition-duration: 500ms;
+  background-color: red;
+}
+
+.hide {
+  display: flex;
+  justify-content: justify-between;
+  align-items: center;
+  flex-direction: column;
+  /* height: 100%; */
+  width: 100%;
+  background-color: green;
+}

@@ -3,10 +3,10 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 const About = () => {
   return (
-    <div className='flex flex-col md:flex-row'>
+    <div className='flex flex-col md:flex-row mb-20'>
       {/* acá va una imagen de envios */}
       <div className='w-screen h-[450px] bg-black flex-1' />
-      <div className='mt-5 flex-1 px-20'>
+      <div className='mt-5 flex-1 px-5 md:px-20'>
         <h1 className='font-semibold text-[33px] whitespace-pre-line'>Guizatec, soluciones digitales para
           empresas.</h1>
         <p className='whitespace-normal leading-7 text-sm'>
