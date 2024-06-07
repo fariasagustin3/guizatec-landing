@@ -1,14 +1,31 @@
-import React from 'react'
+import { useRef } from "react"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+
+  const formData = useRef()
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    emailjs.sendForm('service_otopzzo', 'template_fslkrx3', formData.current, {
+      publicKey: "Cje6IlpiNTUaEn3b-"
+    })
+      .then(() => alert("Email enviado!"))
+      .catch((err) => {
+        alert("Error")
+        console.log(err)
+      })
+  }
+
   return (
     <div className='flex flex-col md:flex-row md:px-20'>
-      <form className='flex flex-col md:justify-evenly w-screen mt-10 px-5 gap-5 md:flex-1'>
+      <form ref={formData} onSubmit={handleSubmit} className='flex flex-col md:justify-evenly w-screen mt-10 px-5 gap-5 md:flex-1'>
         <div className='flex items-center gap-3'>
-          <input type="text" placeholder='Nombre' className='md: text-xs w-full border-none bg-transparent focus:border-[#251f5a] focus:outline-none focus:border-[1px] py-3' />
-          <input type="email" placeholder='Email' className='md: text-xs w-full border-none bg-transparent focus:border-[#251f5a] focus:outline-none focus:border-[1px] py-3' />
+          <input name="name" type="text" placeholder='Nombre' className='md: text-xs w-full border-none bg-transparent focus:border-[#251f5a] focus:outline-none focus:border-[1px] py-3' />
+          <input name="email" type="email" placeholder='Email' className='md: text-xs w-full border-none bg-transparent focus:border-[#251f5a] focus:outline-none focus:border-[1px] py-3' />
         </div>
-        <textarea name="" id="" placeholder='Consulta' className='md: text-xs focus:outline-none border-none' rows={5}></textarea>
+        <textarea name="message" id="" placeholder='Consulta' className='md: text-xs focus:outline-none border-none' rows={5}></textarea>
         <button type='submit' className='self-start bg-black hover:bg-[#251f5a] text-white px-5 py-3 transition-all duration-300'>ENVIAR MENSAJE</button>
       </form>
       <div className='mt-10 md:flex-1 md:flex md:flex-col md:items-center'>
