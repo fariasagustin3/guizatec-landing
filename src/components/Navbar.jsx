@@ -29,19 +29,19 @@ const Navbar = () => {
       {/* navbar vista desde desktop */}
       <div className='hidden md:flex items-center justify-between px-20 py-2'>
         <ul className='flex items-center gap-10'>
-          <li className='pl-2 py-3 text-[#00D2E2] text-sm font-semibold hover:text-white transition-all duration-500'>
+          <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
             <a href="#">INICIO</a>
           </li>
-          <li className='pl-2 py-3 text-[#00D2E2] text-sm font-semibold hover:text-white transition-all duration-500'>
+          <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
             <a href="#">NOSOTROS</a>
           </li>
-          <li className='pl-2 py-3 text-[#00D2E2] text-sm font-semibold hover:text-white transition-all duration-500'>
+          <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
             <a href="#">PRODUCTOS</a>
           </li>
-          <li className='pl-2 py-3 text-[#00D2E2] text-sm font-semibold hover:text-white transition-all duration-500'>
+          <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
             <a href="#">SERVICIO</a>
           </li>
-          <li className='pl-2 py-3 text-[#00D2E2] text-sm font-semibold hover:text-white transition-all duration-500'>
+          <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
             <a href="#">CONTACTO</a>
           </li>
         </ul>
@@ -66,19 +66,19 @@ const Navbar = () => {
 
       {/* menu deplegable */}
       <ul className={open ? "desplegable-abre" : "desplegable-cierra"}>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#00D2E2]' : "hidden"}>
+        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Inicio</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#00D2E2]' : "hidden"}>
+        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Nosotros</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#00D2E2]' : "hidden"}>
+        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Productos</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#00D2E2]' : "hidden"}>
+        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Servicio</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#00D2E2]' : "hidden"}>
+        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Contacto</a>
         </li>
       </ul>

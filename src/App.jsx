@@ -15,12 +15,15 @@ function App() {
       <Logo />
       <Navbar />
       <Carousel />
-      <About />
+      {/* <About /> */}
       <Categories />
       <Clients />
       <Services />
       <Map />
       <Contact />
+      <div className='w-screen h-5 bg-black mt-10'>
+
+      </div>
     </main>
   )
 }

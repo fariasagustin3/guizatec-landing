@@ -23,7 +23,7 @@ const About = () => {
             <span className='text-xs'>Confianza</span>
             <ProgressBar
               completed={100}
-              bgColor="#00D2E2"
+              bgColor="#000"
               animateOnRender
               initCompletedOnAnimation={0}
               transitionDuration="3s"
@@ -38,7 +38,7 @@ const About = () => {
             <span className='text-xs'>Asesoramiento</span>
             <ProgressBar
               completed={100}
-              bgColor="#00D2E2"
+              bgColor="#000"
               animateOnRender
               initCompletedOnAnimation={0}
               transitionDuration="3s"
@@ -53,7 +53,7 @@ const About = () => {
             <span className='text-xs'>Celeridad</span>
             <ProgressBar
               completed={100}
-              bgColor="#00D2E2"
+              bgColor="#000"
               animateOnRender
               initCompletedOnAnimation={0}
               transitionDuration="3s"

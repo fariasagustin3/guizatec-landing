@@ -84,7 +84,7 @@ const HoverElement = ({ id, hoverId, product }) => {
       <div className={id === hoverId ? 'h-full absolute transition-opacity duration-500 left-0 right-0 top-0 bottom-0 m-auto' : "h-full opacity-0 left-0 right-0 top-0 bottom-0 m-auto transition-opacity duration-500"}>
         <div className='flex flex-col h-full items-center justify-center'>
           <h1 className='z-10 text-white opacity-1 text-sm text-center'>{product.name}</h1>
-          <button className='z-10 bg-[#00D2E2] px-3 py-2 font-semibold text-white opacity-1'>Consultanos</button>
+          <button className='z-10 bg-[#000] px-3 py-2 font-semibold text-white opacity-1'>Consultanos</button>
           <div className='absolute h-full w-full bg-black opacity-80'></div>
         </div>
       </div>
@@ -123,10 +123,10 @@ const Categories = () => {
 
   return (
     <div>
-      <div className='w-screen border-t-4 border-t-[#00D2E2]' />
+      <div className='w-screen border-t-4 border-t-[#251f5a]' />
       {/* elemento que tiene el fondo negro con el triangulo en el medio */}
-      <div className='relative flex items-center justify-center bg-black w-screen h-20 mb-60'>
-        <h1 className='text-[#00D2E2] text-2xl font-semibold'>CATEGORIAS DE PRODUCTOS</h1>
+      <div className='relative flex items-center justify-center bg-black w-screen h-20 mb-20 md:mb-40'>
+        <h1 className='text-[#FFF] text-2xl font-semibold'>CATEGORIAS DE PRODUCTOS</h1>
         <div className='absolute top-[90%] w-[150px] md:w-[250px] bg-black h-10 md:h-16 triangulo mb-40'></div>
       </div>
 
@@ -134,23 +134,23 @@ const Categories = () => {
       <div className='w-screen flex items-center flex-wrap px-5 md:pl-24 gap-5 md:gap-10 mb-10'>
         <button
           onClick={() => setSelected("todos")}
-          className={selected === "todos" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-black transition-all duration-500 bg-[#00D2E2] rounded-md' : "bg-transparent font-semibold hover:text-[#00D2E2] transition-all duration-500 py-5"}>TODOS</button>
+          className={selected === "todos" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-gray-400 transition-all duration-500 bg-[#000] rounded-md' : "bg-transparent font-semibold hover:text-[#000] transition-all duration-500 py-5"}>TODOS</button>
         <button
           onClick={() => setSelected("computadoras")}
-          className={selected === "computadoras" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-black transition-all duration-500 bg-[#00D2E2] rounded-md' : "bg-transparent font-semibold hover:text-[#00D2E2] transition-all duration-500 py-5"}>COMPUTADORAS</button>
+          className={selected === "computadoras" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-gray-400 transition-all duration-500 bg-[#000] rounded-md' : "bg-transparent font-semibold hover:text-[#000] transition-all duration-500 py-5"}>COMPUTADORAS</button>
         <button
           onClick={() => setSelected("perifericos")}
-          className={selected === "perifericos" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-black transition-all duration-500 bg-[#00D2E2] rounded-md' : "bg-transparent font-semibold hover:text-[#00D2E2] transition-all duration-500 py-5"}>PERIFÉRICOS</button>
+          className={selected === "perifericos" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-gray-400 transition-all duration-500 bg-[#000] rounded-md' : "bg-transparent font-semibold hover:text-[#000] transition-all duration-500 py-5"}>PERIFÉRICOS</button>
         <button
           onClick={() => setSelected("cartelera_digital")}
-          className={selected === "cartelera_digital" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-black transition-all duration-500 bg-[#00D2E2] rounded-md' : "bg-transparent font-semibold hover:text-[#00D2E2] transition-all duration-500 py-5"}>CARTELERA DIGITAL</button>
+          className={selected === "cartelera_digital" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-gray-400 transition-all duration-500 bg-[#000] rounded-md' : "bg-transparent font-semibold hover:text-[#000] transition-all duration-500 py-5"}>CARTELERA DIGITAL</button>
         <button
           onClick={() => setSelected("audio")}
-          className={selected === "audio" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-black transition-all duration-500 bg-[#00D2E2] rounded-md' : "bg-transparent font-semibold hover:text-[#00D2E2] transition-all duration-500 py-5"}>AUDIO</button>
+          className={selected === "audio" ? 'py-5 px-3 text-sm font-semibold text-white hover:text-gray-400 transition-all duration-500 bg-[#000] rounded-md' : "bg-transparent font-semibold hover:text-[#000] transition-all duration-500 py-5"}>AUDIO</button>
       </div>
 
       {/* listado de categorias de productos */}
-      {/* <div className='flex items-center justify-center flex-wrap gap-5 mb-20'>
+      <div className='flex items-center justify-center flex-wrap gap-5 mb-20'>
         {products?.map(product => (
           <div
             onMouseEnter={() => handleShowComponent(product.id)}
@@ -166,7 +166,7 @@ const Categories = () => {
             <HoverElement id={product.id} product={product} hoverId={showHoverElement} />
           </div>
         ))}
-      </div> */}
+      </div>
     </div>
   )
 }

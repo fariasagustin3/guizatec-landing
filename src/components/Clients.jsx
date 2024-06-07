@@ -63,8 +63,8 @@ const Clients = () => {
   return (
     <>
       {/* carrusel */}
-      <div className='bg-[#818181] gap-10 h-[200px] flex flex-col justify-center py-40 border-y-4 border-y-[#00D2E2]'>
-        <h1 className='text-white text-[30px] text-center font-semibold'>NUESTRAS MARCAS</h1>
+      <div className=' gap-10 h-[200px] flex flex-col justify-center py-40 border-y-4 border-y-[#251f5a]'>
+        <h1 className='text-black text-[30px] text-center font-semibold'>NUESTRAS MARCAS</h1>
         <Slider
           width="150px"
           duration={40}

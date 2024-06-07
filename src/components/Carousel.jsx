@@ -5,23 +5,18 @@ const Carousel = () => {
   const mock = [
     {
       id: 1,
-      title: "Item 1",
-      className: "w-screen bg-red-500 flex items-center justify-center"
+      image: "/images/fondo_1.png",
+      className: "w-screen flex items-center justify-center"
     },
     {
       id: 2,
-      title: "Item 2",
-      className: "w-screen bg-green-500 flex items-center justify-center"
+      image: "/images/fondo_2.png",
+      className: "w-screen flex items-center justify-center"
     },
     {
       id: 3,
-      title: "Item 3",
-      className: "w-screen bg-blue-500 flex items-center justify-center"
-    },
-    {
-      id: 4,
-      title: "Item 4",
-      className: "w-screen bg-yellow-500 flex items-center justify-center"
+      image: "/images/fondo_3.png",
+      className: "w-screen flex items-center justify-center"
     },
   ]
 
@@ -32,7 +27,7 @@ const Carousel = () => {
         id: item.id,
         renderItem: (
           <div className={item.className}>
-            <h1>{item.title}</h1>
+            <img src={item.image} alt="" />
           </div>
         )
       }
@@ -42,12 +37,12 @@ const Carousel = () => {
   useEffect(() => {
     setInterval(() => {
       slideToNextItem()
-    }, 2000)
+    }, 4000)
   }, [])
 
   return (
     <div className='h-[250px] md:h-[500px] overflow-auto'>
-      <div className='h-full overflow-x-hidden'>
+      <div className='h-full overflow-hidden'>
         {carouselFragment}
       </div>
     </div>
