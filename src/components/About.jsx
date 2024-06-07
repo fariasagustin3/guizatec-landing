@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='flex flex-col md:flex-row mb-20'>
       {/* acá va una imagen de envios */}
-      <div className='w-screen h-[450px] bg-black flex-1' />
+      <img src="/images/about_image.png" alt="" className='md:w-[250px] flex-1 bg-[#0f1035] rounded-xl px-10 mx-10 md:px-0 md:mx-0 md:ml-20' />
       <div className='mt-5 flex-1 px-5 md:px-20'>
         <h1 className='font-semibold text-[33px] whitespace-pre-line'>Guizatec, soluciones digitales para
           empresas.</h1>
@@ -27,10 +27,10 @@ const About = () => {
               animateOnRender
               initCompletedOnAnimation={0}
               transitionDuration="3s"
-              height="5px"
+              height="10px"
               labelSize="10px"
-              labelColor='#000000'
-              labelClassName="font-medium text-xs"
+              labelColor='#fff'
+              labelClassName="font-bold text-[9px] text-white"
               barContainerClassName="rounded-none"
             />
           </div>
@@ -42,10 +42,10 @@ const About = () => {
               animateOnRender
               initCompletedOnAnimation={0}
               transitionDuration="3s"
-              height="5px"
+              height="10px"
               labelSize="10px"
-              labelColor='#000000'
-              labelClassName="font-medium text-xs"
+              labelColor='#fff'
+              labelClassName="font-bold text-[9px] text-white"
               barContainerClassName="rounded-none"
             />
           </div>
@@ -57,10 +57,10 @@ const About = () => {
               animateOnRender
               initCompletedOnAnimation={0}
               transitionDuration="3s"
-              height="5px"
+              height="10px"
               labelSize="10px"
-              labelColor='#000000'
-              labelClassName="font-medium text-xs"
+              labelColor='#fff'
+              labelClassName="font-bold text-[9px] text-white"
               barContainerClassName="rounded-none"
             />
           </div>

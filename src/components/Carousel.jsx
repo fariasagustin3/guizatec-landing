@@ -41,7 +41,7 @@ const Carousel = () => {
   }, [])
 
   return (
-    <div className='h-[250px] md:h-[500px] overflow-auto'>
+    <div className='h-[250px] md:h-screen overflow-auto'>
       <div className='h-full overflow-hidden'>
         {carouselFragment}
       </div>

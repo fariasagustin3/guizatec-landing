@@ -15,7 +15,7 @@ function App() {
       <Logo />
       <Navbar />
       <Carousel />
-      {/* <About /> */}
+      <About />
       <Categories />
       <Clients />
       <Services />
