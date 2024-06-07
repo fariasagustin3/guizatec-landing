@@ -3,8 +3,11 @@ import About from './components/About';
 import Carousel from './components/Carousel';
 import Categories from './components/Categories';
 import Clients from './components/Clients';
+import Contact from './components/Contact';
 import Logo from './components/Logo';
+import Map from './components/Map';
 import Navbar from './components/Navbar';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <About />
       <Categories />
       <Clients />
+      <Services />
+      <Map />
+      <Contact />
     </main>
   )
 }
