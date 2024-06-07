@@ -150,7 +150,7 @@ const Categories = () => {
       </div>
 
       {/* listado de categorias de productos */}
-      <div className='flex items-center justify-center flex-wrap gap-5 mb-20'>
+      {/* <div className='flex items-center justify-center flex-wrap gap-5 mb-20'>
         {products?.map(product => (
           <div
             onMouseEnter={() => handleShowComponent(product.id)}
@@ -166,7 +166,7 @@ const Categories = () => {
             <HoverElement id={product.id} product={product} hoverId={showHoverElement} />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
