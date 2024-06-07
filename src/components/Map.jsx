@@ -2,7 +2,7 @@ import React from 'react'
 
 const Map = () => {
   return (
-    <div className='w-screen mt-[600px]'>
+    <div className='w-screen md:mt-10 mt-[600px]'>
       <iframe
         width="100%"
         height="400"
