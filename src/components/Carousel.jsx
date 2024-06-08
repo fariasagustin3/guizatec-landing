@@ -27,7 +27,7 @@ const Carousel = () => {
         id: item.id,
         renderItem: (
           <div className={item.className}>
-            <img src={item.image} alt="" />
+            <img src={item.image} alt="" className='w-screen' />
           </div>
         )
       }
@@ -37,11 +37,11 @@ const Carousel = () => {
   useEffect(() => {
     setInterval(() => {
       slideToNextItem()
-    }, 4000)
+    }, 3000)
   }, [])
 
   return (
-    <div className='h-[250px] md:h-screen overflow-auto'>
+    <div className='h-[250px] md:h-full md:w-screen overflow-auto'>
       <div className='h-full overflow-hidden'>
         {carouselFragment}
       </div>
