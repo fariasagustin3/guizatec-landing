@@ -50,7 +50,7 @@ const About = () => {
             />
           </div>
           <div className='flex flex-col gap-3'>
-            <span className='text-xs'>Confianza</span>
+            <span className='text-xs'>Compromiso</span>
             <ProgressBar
               completed={100}
               bgColor="#731523"
