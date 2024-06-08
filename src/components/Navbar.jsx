@@ -66,19 +66,19 @@ const Navbar = () => {
 
       {/* menu deplegable */}
       <ul className={open ? "desplegable-abre" : "desplegable-cierra"}>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
+        <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Inicio</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
+        <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Nosotros</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
+        <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Productos</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
+        <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Servicio</a>
         </li>
-        <li className={open ? 'pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
+        <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
           <a href="#">Contacto</a>
         </li>
       </ul>
