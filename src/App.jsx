@@ -21,9 +21,7 @@ function App() {
       <Services />
       <Map />
       <Contact />
-      <div className='w-screen h-5 bg-black mt-10'>
-
-      </div>
+      <div className='w-screen h-5 bg-[#731523] mt-10'></div>
     </main>
   )
 }

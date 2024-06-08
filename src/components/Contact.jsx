@@ -26,11 +26,11 @@ const Contact = () => {
           <input name="email" type="email" placeholder='Email' className='md: text-xs w-full border-none bg-transparent focus:border-[#251f5a] focus:outline-none focus:border-[1px] py-3' />
         </div>
         <textarea name="message" id="" placeholder='Consulta' className='md: text-xs focus:outline-none border-none' rows={5}></textarea>
-        <button type='submit' className='self-start bg-black hover:bg-[#251f5a] text-white px-5 py-3 transition-all duration-300'>ENVIAR MENSAJE</button>
+        <button type='submit' className='self-start bg-[#731523] hover:bg-black text-white px-5 py-3 transition-all duration-300'>ENVIAR MENSAJE</button>
       </form>
       <div className='mt-10 md:flex-1 md:flex md:flex-col md:items-center'>
         <h3 className='font-semibold px-5 text-sm'>Info de Contacto:</h3>
-        <div className='border-4 flex flex-col justify-center gap-14 border-[#251f5a] bg-black mx-5 mt-5 px-5 h-[300px] md:w-[70%]'>
+        <div className='border-4 flex flex-col justify-center gap-14 border-[#731523] bg-black mx-5 mt-5 px-5 h-[300px] md:w-[70%]'>
           <div className='flex items-center gap-2'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="#FFF" className="size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
