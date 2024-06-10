@@ -1,28 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useSpringCarousel } from 'react-spring-carousel'
+import { carousel } from '../data';
 
 const Carousel = () => {
-  const mock = [
-    {
-      id: 1,
-      image: "/images/fondo_1.png",
-      className: "w-screen flex items-center justify-center"
-    },
-    {
-      id: 2,
-      image: "/images/fondo_2.png",
-      className: "w-screen flex items-center justify-center"
-    },
-    {
-      id: 3,
-      image: "/images/fondo_3.png",
-      className: "w-screen flex items-center justify-center"
-    },
-  ]
-
   const { carouselFragment, slideToNextItem } = useSpringCarousel({
     withLoop: true,
-    items: mock.map(item => {
+    items: carousel.map(item => {
       return {
         id: item.id,
         renderItem: (
