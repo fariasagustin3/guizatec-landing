@@ -3,7 +3,7 @@ import ProgressBar from "@ramonak/react-progress-bar";
 
 const About = () => {
   return (
-    <div className='flex flex-col md:flex-row mb-20'>
+    <div id='about' className='flex flex-col md:flex-row mb-20'>
       {/* acá va una imagen de envios */}
       <img src="/images/about_image.png" alt="" className='md:w-[250px] flex-[0.8] rounded-xl px-10 mx-10 md:px-0 md:mx-10 md:ml-20' />
       <div className='mt-5 flex-1 px-5 md:px-20'>

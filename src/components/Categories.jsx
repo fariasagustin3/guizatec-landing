@@ -42,7 +42,7 @@ const Categories = () => {
   }, [selected])
 
   return (
-    <div>
+    <div id="categories">
       <div className='w-screen border-t-4 border-t-[#731523]' />
       {/* elemento que tiene el fondo negro con el triangulo en el medio */}
       <div className='relative flex items-center justify-center bg-black w-screen h-20 mb-20 md:mb-40'>

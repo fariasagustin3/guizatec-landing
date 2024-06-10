@@ -19,7 +19,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='flex flex-col md:flex-row md:px-20'>
+    <div id="contact" className='flex flex-col md:flex-row md:px-20'>
       <form ref={formData} onSubmit={handleSubmit} className='flex flex-col md:justify-evenly w-screen mt-10 px-5 gap-5 md:flex-1'>
         <div className='flex items-center gap-3'>
           <input name="name" type="text" placeholder='Nombre' className='md: text-xs w-full border-none bg-transparent focus:border-[#251f5a] focus:outline-none focus:border-[1px] py-3' />

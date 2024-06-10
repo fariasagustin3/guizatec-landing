@@ -30,19 +30,19 @@ const Navbar = () => {
       <div className='hidden md:flex items-center justify-between px-20 py-2'>
         <ul className='flex items-center gap-10'>
           <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
-            <a href="#">INICIO</a>
+            <a href="#index">INICIO</a>
           </li>
           <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
-            <a href="#">NOSOTROS</a>
+            <a href="#about">NOSOTROS</a>
           </li>
           <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
-            <a href="#">PRODUCTOS</a>
+            <a href="#categories">PRODUCTOS</a>
           </li>
           <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
-            <a href="#">SERVICIO</a>
+            <a href="#services">SERVICIO</a>
           </li>
           <li className='pl-2 py-3 text-[#FFF] text-sm font-semibold hover:text-gray-400 transition-all duration-500'>
-            <a href="#">CONTACTO</a>
+            <a href="#contact">CONTACTO</a>
           </li>
         </ul>
 
@@ -67,19 +67,19 @@ const Navbar = () => {
       {/* menu deplegable */}
       <ul className={open ? "desplegable-abre" : "desplegable-cierra"}>
         <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
-          <a href="#">Inicio</a>
+          <a href="#index">Inicio</a>
         </li>
         <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
-          <a href="#">Nosotros</a>
+          <a href="#about">Nosotros</a>
         </li>
         <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
-          <a href="#">Productos</a>
+          <a href="#categories">Productos</a>
         </li>
         <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
-          <a href="#">Servicio</a>
+          <a href="#services">Servicio</a>
         </li>
         <li className={open ? 'z-10 pl-2 py-3 border-t-[1px] border-t-[#afaeae] text-[#FFF]' : "hidden"}>
-          <a href="#">Contacto</a>
+          <a href="#contact">Contacto</a>
         </li>
       </ul>
     </nav>
