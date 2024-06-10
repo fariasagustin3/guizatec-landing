@@ -78,7 +78,9 @@ const Categories = () => {
               <div className={product.id === showHoverElement ? 'h-full absolute transition-opacity duration-500 left-0 right-0 top-0 bottom-0 m-auto' : "h-full opacity-0 left-0 right-0 top-0 bottom-0 m-auto transition-opacity duration-500"}>
                 <div className='flex flex-col h-full items-center justify-center'>
                   <h1 className='z-10 text-white opacity-1 text-sm text-center'>{product.name}</h1>
-                  <button className='z-10 bg-[#731523] text-sm px-3 py-2 font-semibold text-white opacity-1'>Consultanos</button>
+                  <a className='z-10 bg-[#731523] text-sm px-3 py-2 font-semibold text-white opacity-1' href="https://wa.me/543704789947" target='_blank'>
+                    <button>Consultanos</button>
+                  </a>
                   <div className='absolute h-full w-full bg-black opacity-80'></div>
                 </div>
               </div>
