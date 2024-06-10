@@ -10,13 +10,11 @@ const About = () => {
         <h1 className='font-semibold text-[33px] whitespace-pre-line'>Guizatec, soluciones digitales para
           empresas.</h1>
         <p className='whitespace-normal leading-7 text-sm'>
-          Comprendemos las necesidades específicas de
-          las empresas en el mundo digital, nuestra misión
-          es proporcionar soluciones tecnológicas
-          confiables y eficientes para impulsar el éxito de tu
-          organización. Ofrecemos una amplia gama de
-          productos y servicios atendiendo siempre las
-          demandas empresariales.
+          Comprendemos las necesidades específicas de las empresas en el mundo digital, 
+          nuestra misión es proporcionar soluciones tecnológicas confiables y eficientes para 
+          impulsar el éxito de tu organización. Ofrecemos una amplia gama de productos y 
+          servicios atendiendo siempre las demandas empresariales. Trabajamos con más de 
+          100 marcas del mercado. Tenemos 20 años de experiencia. Mejoramos cualquier presupuesto.
         </p>
         <div className='mt-5 flex flex-col gap-5'>
           <div className='flex flex-col gap-3'>

@@ -121,7 +121,7 @@ export const productos = [
   {
     id: 12,
     name: "TONER ORIGINALES Y ALTERNATIVOS",
-    image: "/images/blanco_negro/toner_y_tintas_originals_y_alternativos.png",
+    image: "/images/blanco_negro/toner_originales_y_alternativos.png",
     category: "impresoras",
   },
 ]
